@@ -8,7 +8,10 @@ int main(int argc, char* argv[])
 
 	string season_name = string(argv[2]);
 
-	string team_name = string(argv[3]);
+	string team_name;
+
+	if(argc>=4)
+		team_name = string(argv[3]);
 
 	//Handling multiple worded teams
 	for (int i = 4; i<argc; i++)
